@@ -12,7 +12,7 @@
 
 # uYAML
 
-> Provides user-friendly interface for YAML data stream serialization.
+> Provides user-friendly interface for YAML data stream serialization with OOP support.
 >
 > Basically it is a wrapper over **pyyaml** python library.
 
@@ -35,7 +35,8 @@ Please run following script to obtain latest package from PYPI:
 ```bash
 ➜ pip install uyaml
 ```
-Then you are welcome to use `uyaml` package from your environment
+
+### Quick start
 
 ### Source code
 
