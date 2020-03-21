@@ -55,7 +55,7 @@ check-pylint() {
 :<<DOC
     Runs "pylint" code analyser
 DOC
-    --entry-point-box "pylint" && ( pylint $(find ${PACKAGE} -iname *.py) )
+    --entry-point-box "pylint" && ( pylint $(find "${PACKAGE}/" -iname *.py) )
 }
 
 

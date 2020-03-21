@@ -1,8 +1,9 @@
 """Module represents API to load data from specific YAML steam."""
 from abc import ABC, abstractmethod
-from typing import Dict, Any, IO, List
+from typing import Dict, Any, IO
 from yaml import safe_load
 from uyaml.file import File, safe_path
+from uyaml.type import List
 
 YamlType = Dict[Any, Any]
 
@@ -43,7 +44,7 @@ class YamlFromPath(Yaml):
 
     def __init__(self, path: str) -> None:
         self._path: str = safe_path(path, extensions=("yaml",))
-        self._content: List[Yaml] = []
+        self._content: List = List()
 
     def content(self) -> YamlType:
         return self._parsed.content()
@@ -57,4 +58,4 @@ class YamlFromPath(Yaml):
         if not self._content:
             with File(self._path) as file:  # type: IO[str]
                 self._content.append(YamlFromStream(file))
-        return self._content[0]
+        return self._content.first()

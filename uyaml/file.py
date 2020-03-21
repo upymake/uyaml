@@ -1,6 +1,6 @@
 """Module contains interfaces to to work with general usage files."""
 from abc import abstractmethod
-from typing import Optional, Type, IO, Tuple
+from typing import Optional, Type, IO, Tuple, Any
 from types import TracebackType
 from uyaml.connection import Friendly
 
@@ -52,9 +52,9 @@ class File(Content):
     def read(self) -> str:
         return "".join(self._stream.readlines())
 
-    def __enter__(self) -> Content:
+    def __enter__(self) -> Any:
         """Returns file itself."""
-        return self
+        return self._stream
 
     def __exit__(
         self,

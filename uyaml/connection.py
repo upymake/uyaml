@@ -1,7 +1,7 @@
 """Module contains interfaces to work with connections."""
 from abc import abstractmethod
 from types import TracebackType
-from typing import ContextManager, Any, Optional, Type
+from typing import ContextManager, Optional, Type, Any
 
 
 class Friendly(ContextManager["Friendly"]):
