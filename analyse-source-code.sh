@@ -93,7 +93,6 @@ DOC
       check-mypy && \
       check-pylint && \
       check-docstrings && \
-      check-flake && \
       check-unittests
     )
 }

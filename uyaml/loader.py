@@ -2,7 +2,7 @@
 from abc import ABC, abstractmethod
 from typing import Dict, Any, IO, List
 from yaml import safe_load
-from uyaml.file import File
+from uyaml.file import File, safe_path
 
 YamlType = Dict[Any, Any]
 
@@ -42,7 +42,7 @@ class YamlFromPath(Yaml):
     """Represents a filepath as a `YAML` object."""
 
     def __init__(self, path: str) -> None:
-        self._path: str = path
+        self._path: str = safe_path(path, extensions=("yaml",))
         self._content: List[Yaml] = []
 
     def content(self) -> YamlType:
