@@ -57,6 +57,11 @@ Please run following script to obtain latest package from PYPI:
 ➜ pip install -e .
 ```
 
+Or using direct source code tag:
+```bash
+➜ pip install git+https://github.com/vyahello/uyaml@0.0.1
+```
+
 ## Development notes
 
 ### CI
