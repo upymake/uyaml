@@ -1,16 +1,20 @@
 import os
 import pytest
+from _pytest.tmpdir import TempdirFactory
+from py._path.local import LocalPath
 from uyaml.file import File, Content, safe_path
 
 _file: str = "file.txt"
-_content: str = "test content"
+_content: str = "test"
 
 
 @pytest.fixture(scope="session")
-def file() -> Content:
-    with File(_file, mode="a+") as file:  # type: Content
+def file(tmpdir_factory: TempdirFactory) -> Content:
+    path: LocalPath = tmpdir_factory.mktemp(_content).join(_file)
+    with File(path, mode="a+") as file:  # type: Content
         yield file
-    os.remove(_file)
+    if os.path.exists(path):
+        os.remove(path)
 
 
 def test_file_write(file: Content) -> None:
