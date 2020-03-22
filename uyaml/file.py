@@ -1,6 +1,6 @@
 """Module contains interfaces to to work with general usage files."""
 from abc import abstractmethod
-from typing import Optional, Type, IO, Tuple, Any
+from typing import Optional, Type, IO, Tuple, Any, List
 from types import TracebackType
 from uyaml.connection import Friendly
 
@@ -35,8 +35,13 @@ class Content(Friendly):
         pass
 
     @abstractmethod
-    def read(self) -> str:
+    def read(self, number: int = -1) -> str:
         """Reads a content."""
+        pass
+
+    @abstractmethod
+    def readlines(self, hint: int = -1) -> List[str]:
+        """Reads line by line."""
         pass
 
 
@@ -49,8 +54,11 @@ class File(Content):
     def write(self, content: str) -> int:
         return self._stream.write(content)
 
-    def read(self) -> str:
-        return "".join(self._stream.readlines())
+    def read(self, number: int = -1) -> str:
+        return self._stream.read(number)
+
+    def readlines(self, hint: int = -1) -> List[str]:
+        return self._stream.readlines(hint)
 
     def __enter__(self) -> Any:
         """Returns file itself."""
