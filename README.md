@@ -47,9 +47,17 @@ Please run following script to obtain latest package from PYPI:
 >>>
 >>> yaml: Yaml = YamlFromPath("path/to/config.yaml")
 >>> yaml.content()
-{'top': {'foo': {'content': 'empty', 'priority': 0}, 'bar': {'content': 'empty', 'priority': 1}}}
+{"top": 
+  {
+    "foo": {"content": "empty", "priority": 0}, 
+    "bar": {"content": "empty", "priority": 1}
+  }
+}
 >>> yaml.section(name="top")
-{"foo": {"content": "empty", "priority": 0}, "bar": {"content": "empty", "priority": 1}}
+{
+  "foo": {"content": "empty", "priority": 0}, 
+  "bar": {"content": "empty", "priority": 1}
+}
 ```
 
 ### Source code
