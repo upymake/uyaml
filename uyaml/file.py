@@ -1,4 +1,4 @@
-"""Module contains interfaces to to work with general usage files."""
+"""Module contains interfaces to work with general usage files."""
 from abc import abstractmethod
 from typing import Optional, Type, IO, Tuple, Any, List
 from types import TracebackType

@@ -35,11 +35,27 @@
 Please run following script to obtain latest package from PYPI:
 ```bash
 ➜ pip install uyaml
+✨ 🍰 ✨
 ```
 
 ### Quick start
 
+```python
+>>> from uyaml.loader import Yaml, YamlFromPath
+>>>
+>>> yaml: Yaml = YamlFromPath("path/to/config.yaml")
+>>> yaml.content()
+{'top': {'foo': {'content': 'empty', 'priority': 0}, 'bar': {'content': 'empty', 'priority': 1}}}
+>>> yaml.section(name="top")
+{"foo": {"content": "empty", "priority": 0}, "bar": {"content": "empty", "priority": 1}}
+```
+
 ### Source code
+
+```bash
+➜ git clone git@github.com:vyahello/uyaml.git
+➜ pip install -e .
+```
 
 ## Development notes
 
