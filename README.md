@@ -39,7 +39,6 @@ Please run following script to obtain latest package from PYPI:
 ➜ pip install uyaml
 ✨ 🍰 ✨
 ```
-
 ### Quick start
 
 ```python
@@ -59,7 +58,6 @@ Please run following script to obtain latest package from PYPI:
   "bar": {"content": "empty", "priority": 1}
 }
 ```
-
 ### Source code
 
 ```bash
@@ -67,10 +65,11 @@ Please run following script to obtain latest package from PYPI:
 ➜ pip install -e .
 ```
 
-Or using direct source code tag:
+Or using direct source:
 ```bash
 ➜ pip install git+https://github.com/vyahello/uyaml@0.0.1
 ```
+**[⬆ back to top](#uyaml)**
 
 ## Development notes
 
@@ -82,7 +81,6 @@ To be able to run code analysis, please execute command below:
 ```bash
 ➜ ./analyse-source-code.sh
 ```
-
 ### Release notes
 
 Please check [changelog](CHANGELOG.md) file to get more details about actual versions and it's release notes.
@@ -104,3 +102,4 @@ You can reach out me at:
 3. `pip install -r requirements.txt` to install all project dependencies
 4. `pip install -r requirements-dev.txt` to install all development project dependencies
 
+**[⬆ back to top](#uyaml)**
