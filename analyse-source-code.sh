@@ -31,7 +31,7 @@ check-flake8() {
 :<<DOC
     Runs "flake8" code analysers
 DOC
-    --entry-point-box "flake" && ( flake8 ${PACKAGE} )
+    --entry-point-box "flake" && ( flake8 ${PACKAGE}  )
 }
 
 
@@ -93,6 +93,7 @@ DOC
       check-mypy && \
       check-pylint && \
       check-docstrings && \
+      check-flake8 && \
       check-unittests
     )
 }

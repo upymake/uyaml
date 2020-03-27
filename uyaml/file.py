@@ -1,7 +1,7 @@
 """Module contains interfaces to work with general usage files."""
 from abc import abstractmethod
-from typing import Optional, Type, IO, Tuple, Any, List
 from types import TracebackType
+from typing import Any, IO, List, Optional, Tuple, Type
 from uyaml.connection import Friendly
 
 
@@ -48,8 +48,8 @@ class Content(Friendly):
 class File(Content):
     """Represents text file object."""
 
-    def __init__(self, file: str, mode: str = "r") -> None:
-        self._stream: IO[str] = open(file, mode)
+    def __init__(self, path: str, mode: str = "r") -> None:
+        self._stream: IO[str] = open(path, mode)
 
     def write(self, content: str) -> int:
         return self._stream.write(content)

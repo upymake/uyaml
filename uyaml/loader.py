@@ -1,6 +1,6 @@
 """Module represents API to load data from specific YAML steam."""
 from abc import ABC, abstractmethod
-from typing import Dict, Any, IO
+from typing import Any, Dict, IO
 from yaml import safe_load
 from uyaml.file import File, safe_path
 from uyaml.type import List
