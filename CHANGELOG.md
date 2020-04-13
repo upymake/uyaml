@@ -1,6 +1,13 @@
 Versions
 ========
 
+0.0.3 (2020-04-13)
+=========
+- Count package downloads
+- Support 'yml' as expected extensions
+- Add codefactor badge
+- Enhance flake8 code formatter
+
 0.0.2 (2020-03-23)
 =========
 - Polish readme documentation
