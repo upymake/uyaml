@@ -43,7 +43,7 @@ class YamlFromPath(Yaml):
     """Represents a filepath as a `YAML` object."""
 
     def __init__(self, path: str) -> None:
-        self._path: str = safe_path(path, extensions=("yaml",))
+        self._path: str = safe_path(path, extensions=("yml", "yaml"))
         self._content: List = List()
 
     def content(self) -> YamlType:
