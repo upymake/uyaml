@@ -12,6 +12,7 @@
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![PyPI version shields.io](https://img.shields.io/pypi/v/uyaml.svg)](https://pypi.python.org/pypi/uyaml/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/uyaml.svg)](https://pypi.python.org/pypi/uyaml/)
+[![Downloads](https://pepy.tech/badge/uyaml)](https://pepy.tech/project/uyaml)
 [![CodeFactor](https://www.codefactor.io/repository/github/vyahello/uyaml/badge)](https://www.codefactor.io/repository/github/vyahello/uyaml)
 
 # uYAML
