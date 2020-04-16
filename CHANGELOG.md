@@ -1,6 +1,10 @@
 Versions
 ========
 
+0.0.4 (2020-04-16)
+=========
+- Introduce 'enforce-pep8' package
+
 0.0.3 (2020-04-13)
 =========
 - Count package downloads
