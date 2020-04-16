@@ -2,7 +2,7 @@
 from abc import abstractmethod
 from types import TracebackType
 from typing import Any, IO, List, Optional, Tuple, Type
-from uyaml.connection import Friendly
+from punish.type import AbstractContextManager
 
 
 def safe_path(path: str, extensions: Tuple[str, ...]) -> str:
@@ -20,7 +20,7 @@ def safe_path(path: str, extensions: Tuple[str, ...]) -> str:
     return path
 
 
-class Content(Friendly):
+class Content(AbstractContextManager):
     """Represent abstraction a content."""
 
     @abstractmethod
