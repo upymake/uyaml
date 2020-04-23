@@ -1,6 +1,18 @@
 Versions
 ========
 
+
+0.0.5
+=========
+
+_Release date: 2020-04-23_
+
+- Add 'travis' CI to tools
+- Style changelog file with release date
+- Update organisation badges
+- Implement context yaml manager from path
+- Implement safe yaml file
+
 0.0.4
 =========
 
