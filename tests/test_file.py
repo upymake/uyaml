@@ -2,7 +2,7 @@ import os
 import pytest
 from _pytest.tmpdir import TempdirFactory
 from py._path.local import LocalPath
-from uyaml.file import File, Content, safe_path
+from uyaml.file import File, Content, _safe_path, safe_yaml_path
 
 _file: str = "file.txt"
 _content: str = "test"
@@ -26,9 +26,18 @@ def test_file_read(file: Content) -> None:
 
 
 def test_safe_path() -> None:
-    assert safe_path("file.txt", extensions=("txt", "jpeg"))
+    assert _safe_path(_file, extensions=("txt", "jpeg"))
 
 
 def test_not_safe_path() -> None:
     with pytest.raises(ValueError):
-        safe_path("file.txt", extensions=("img",))
+        _safe_path(_file, extensions=("img",))
+
+
+def test_safe_yaml_path() -> None:
+    assert safe_yaml_path("file.yaml")
+
+
+def test_not_safe_yaml_path() -> None:
+    with pytest.raises(ValueError):
+        safe_yaml_path("file.png")
