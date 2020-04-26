@@ -39,7 +39,7 @@
 
 Please run following script to obtain latest package from PYPI:
 ```bash
-➜ pip install uyaml
+pip install uyaml
 ✨ 🍰 ✨
 ```
 ### Quick start
@@ -64,13 +64,13 @@ Please run following script to obtain latest package from PYPI:
 ### Source code
 
 ```bash
-➜ git clone git@github.com:vyahello/uyaml.git
-➜ pip install -e .
+git clone git@github.com:vyahello/uyaml.git
+pip install -e .
 ```
 
 Or using direct source:
 ```bash
-➜ pip install git+https://github.com/vyahello/uyaml@0.0.1
+pip install git+https://github.com/vyahello/uyaml@0.0.1
 ```
 **[⬆ back to top](#uyaml)**
 
@@ -82,7 +82,7 @@ Project has Travis CI integration using [.travis.yml](.travis.yml) file thus cod
 
 To be able to run code analysis, please execute command below:
 ```bash
-➜ ./analyse-source-code.sh
+./analyse-source-code.sh
 ```
 ### Release notes
 
@@ -90,7 +90,7 @@ Please check [changelog](CHANGELOG.md) file to get more details about actual ver
 
 ### Meta
 
-Author – Volodymyr Yahello
+Author – _Volodymyr Yahello_. Please refer to [AUTHORS](AUTHORS.md) file to get all contributors.
 
 Distributed under the `MIT` license. See [LICENSE](LICENSE.md) for more information.
 
