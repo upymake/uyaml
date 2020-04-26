@@ -1,3 +1,4 @@
+# pylint: disable-all
 import pytest
 from uyaml.type import List
 

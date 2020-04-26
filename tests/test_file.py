@@ -1,3 +1,4 @@
+# pylint: disable-all
 import os
 import pytest
 from _pytest.tmpdir import TempdirFactory

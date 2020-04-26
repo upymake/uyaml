@@ -17,7 +17,7 @@
 
 # uYAML
 
-> Provides user-friendly interface for YAML data stream serialization with OOP support.
+> Provides user-friendly interface for YAML data stream serialization with nothing but objects, supporting OOP approach.
 >
 > Basically it is a wrapper over **pyyaml** python library.
 
