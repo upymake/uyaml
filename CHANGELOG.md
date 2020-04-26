@@ -1,6 +1,12 @@
 Versions
 ========
 
+0.0.6
+=========
+
+_Release date: 2020-04-26_
+
+- Define public interfaces provided by a package
 
 0.0.5
 =========
