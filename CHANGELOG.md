@@ -1,6 +1,14 @@
 Versions
 ========
 
+0.0.7
+=========
+
+_Release date: 2020-10-13_
+
+- Split supported python versions with comma
+- Set theme jekyll-theme-architect
+
 0.0.6
 =========
 
